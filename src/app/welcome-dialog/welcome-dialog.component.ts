@@ -17,8 +17,8 @@ export class WelcomeDialogComponent implements OnInit {
 
   openDialog() {
     const dialog = this.welcomeDialog.open(WelcomeInfoComponent, {
-      height: '170px',
-      width: '600px'
+      height: 'auto',
+      width: 'auto'
     });
     dialog.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${ result }`)
