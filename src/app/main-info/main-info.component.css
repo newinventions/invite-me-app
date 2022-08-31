@@ -1,54 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Rubik+Distressed');
 
 .bckgrndImg {
-    height: 1200px;
+    height: 1000px;
     background-image: url("../../assets/Foto_20220401002.jpg");
     background-size: 100%;
     background-size: cover;
     background-position-x: center;
 }
 .pName {
-    margin-top: 900px;
+    margin-top: 700px;
     text-align: center;
     font-family: Amatic SC, serif;
+    font-size: 22px;
     letter-spacing: 0.3em;
     color: white;
-    font-size: 25px;
-    /* text-shadow: 2px 2px #777; */
 }
 .eventName {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
     font-family: Rubik Distressed, serif;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
 .counter {
     text-align: center;
     font-family: Rubik Distressed, serif;
-    font-size: 27px;
+    font-size: 20px;
     color: white;
 }
 .colon {
     text-align: center;
     font-family: Rubik Distressed, serif;
-    font-size: 9px;
+    font-size: 7px;
     color: white;
 }
 .counterTitle {
-    margin-top: 16px;
+    margin-top: 5px;
     text-align: center;
     font-family: Rubik Distressed, serif;
-    font-size: 13px;
+    font-size: 10px;
     color: white;
 }
 .timeCounter {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 20px;
     table-layout: fixed;
-    width: 400px;
+    width: 270px;
+}
+@media all and (max-width: 519px) and (min-width: 414px) {
+    .bckgrndImg {
+        height: 1200px;
+        background-image: url("../../assets/Foto_20220401002.jpg");
+        background-size: 100%;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .pName {
+        margin-top: 900px;
+        text-align: center;
+        font-family: Amatic SC, serif;
+        letter-spacing: 0.3em;
+        color: white;
+        font-size: 25px;
+        /* text-shadow: 2px 2px #777; */
+    }
+    .eventName {
+        margin-top: 40px;
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 40px;
+        color: white;
+    }
+    .counter {
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 27px;
+        color: white;
+    }
+    .colon {
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 9px;
+        color: white;
+    }
+    .counterTitle {
+        margin-top: 16px;
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 13px;
+        color: white;
+    }
+    .timeCounter {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        table-layout: fixed;
+        width: 400px;
+    }
 }
 @media all and (max-width: 699px) and (min-width: 520px) {
     .bckgrndImg {
