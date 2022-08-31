@@ -29,17 +29,180 @@
     font-size: 27px;
     color: white;
 }
-.counterTitle {
-    margin-top: 12px;
+.colon {
     text-align: center;
     font-family: Rubik Distressed, serif;
-    font-size: 20px;
+    font-size: 9px;
+    color: white;
+}
+.counterTitle {
+    margin-top: 16px;
+    text-align: center;
+    font-family: Rubik Distressed, serif;
+    font-size: 13px;
     color: white;
 }
 .timeCounter {
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 20px;
     table-layout: fixed;
     width: 400px;
+}
+@media all and (max-width: 699px) and (min-width: 520px) {
+    .bckgrndImg {
+        height: 1400px;
+        background-image: url("../../assets/Foto_20220401002.jpg");
+        background-size: 100%;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .pName {
+        margin-top: 1050px;
+        text-align: center;
+        font-family: Amatic SC, serif;
+        letter-spacing: 0.3em;
+        color: white;
+        font-size: 35px;
+        /* text-shadow: 2px 2px #777; */
+    }
+    .eventName {
+        margin-top: 50px;
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 50px;
+        color: white;
+    }
+    .counter {
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 32px;
+        color: white;
+    }
+    .colon {
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 11px;
+        color: white;
+    }
+    .counterTitle {
+        margin-top: 20px;
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 17px;
+        color: white;
+    }
+    .timeCounter {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 25px;
+        table-layout: fixed;
+        width: 410px;
+    }
+}
+@media all and (max-width: 1000px) and (min-width: 700px) {
+    .bckgrndImg {
+        height: 1600px;
+        background-image: url("../../assets/Foto_20220401002.jpg");
+        background-size: 100%;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .pName {
+        margin-top: 1200px;
+        text-align: center;
+        font-family: Amatic SC, serif;
+        letter-spacing: 0.3em;
+        color: white;
+        font-size: 40px;
+        /* text-shadow: 2px 2px #777; */
+    }
+    .eventName {
+        margin-top: 70px;
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 63px;
+        color: white;
+    }
+    .counter {
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 50px;
+        color: white;
+    }
+    .colon {
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 17px;
+        color: white;
+    }
+    .counterTitle {
+        margin-top: 35px;
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 23px;
+        color: white;
+    }
+    .timeCounter {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 50px;
+        table-layout: fixed;
+        width: 600px;
+    }
+}
+@media all and (min-width: 1001px) {
+    .bckgrndImg {
+        height: 1800px;
+        background-image: url("../../assets/Foto_20220401002.jpg");
+        background-size: 100%;
+        background-size: contain;
+        background-position-x: center;
+    }
+    .pName {
+        margin-top: 1400px;
+        text-align: center;
+        font-family: Amatic SC, serif;
+        letter-spacing: 0.3em;
+        color: white;
+        font-size: 50px;
+        /* text-shadow: 2px 2px #777; */
+    }
+    .eventName {
+        margin-top: 80px;
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 80px;
+        color: white;
+    }
+    .counter {
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 60px;
+        color: white;
+    }
+    .colon {
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 20px;
+        color: white;
+    }
+    .counterTitle {
+        margin-top: 38px;
+        text-align: center;
+        font-family: Rubik Distressed, serif;
+        font-size: 30px;
+        color: white;
+    }
+    .timeCounter {
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 50px;
+        table-layout: fixed;
+        width: 800px;
+    }
 }
