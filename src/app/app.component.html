@@ -1,0 +1,46 @@
+<html>
+  <head></head>
+  <body>
+    <app-welcome-dialog></app-welcome-dialog>
+    <div class="header">
+      <button mat-fab [matMenuTriggerFor]="headerMenu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #headerMenu="matMenu">
+        <button mat-menu-item class="menuItem">
+          <div>
+            D&oacute;nde & Cu&aacute;ndo
+          </div>
+        </button>
+        <button mat-menu-item class="menuItem">
+          <div>
+            Recepci&oacute;n
+          </div>
+        </button>
+        <button mat-menu-item class="menuItem">
+          <div>
+            Mis Fotos
+          </div>
+        </button>
+        <button mat-menu-item class="menuItem">
+          <div>
+            Mi Familia
+          </div>
+        </button>
+        <button mat-menu-item class="menuItem">
+          <div>
+            Ver Video
+          </div>
+        </button>
+        <button mat-menu-item class="menuItem">
+          <div>
+            Mensaje
+          </div>
+        </button>
+      </mat-menu>
+    </div>
+    <div class="mainInfo">
+      <app-main-info></app-main-info>
+    </div>
+  </body>
+</html>
