@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## About INVITE-ME-APP
  This is a personal project to simulate a invitation card but with all the advantages that an Angular Web project can provide.
- I'm doing this for my son's 3 years old party. So, I'm sending this to my guests.
+ I'm doing this for my 3 years old son's party. So, I'm sending this card to my guests.
 
  I'm building this project with these main sections:
 
