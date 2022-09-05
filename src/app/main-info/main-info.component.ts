@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CountdownTimerComponent } from 'projects/countdown-timer/src/lib/countdown-timer.component';
 
 @Component({
   selector: 'app-main-info',
@@ -6,10 +7,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-info.component.css']
 })
 export class MainInfoComponent implements OnInit {
+  message: string = "";
 
-  constructor() { }
+  constructor(public timer: CountdownTimerComponent) { }
 
   ngOnInit(): void {
+    // Initialize time with 0
+    this.timer.time = {
+      days: 0, hours: 0, minutes: 0, seconds: 0
+    };
+    // Now, set the finishDate  in string format YYYY-MM-dd HH:mm:ss
+    this.timer.finishDate = new Date('2023-04-01 11:00:00');
+
+    //this.start().subscribe(_ => console.log("tik"))
+    let counterTimer$ = this.timer.start().subscribe((_) => {
+      if (this.timer.time.days < 0) {
+        this.timer.time = {
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0
+        }
+        this.message = "¡Disfruta la fiesta junto a nosotros!";
+        counterTimer$.unsubscribe();
+      }
+    });
   }
 
 }

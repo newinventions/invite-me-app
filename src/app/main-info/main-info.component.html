@@ -10,13 +10,13 @@
     </div>
     <table class="timeCounter">
         <tr>
-            <td><div class="counter">150</div></td>
+            <td><div class="counter">{{ timer.time.days }}</div></td>
             <td><div class="colon">:</div></td>
-            <td><div class="counter">00</div></td>
+            <td><div class="counter">{{ timer.time.hours }}</div></td>
             <td><div class="colon">:</div></td>
-            <td><div class="counter">39</div></td>
+            <td><div class="counter">{{ timer.time.minutes }}</div></td>
             <td><div class="colon">:</div></td>
-            <td><div class="counter">52</div></td>
+            <td><div class="counter">{{ timer.time.seconds }}</div></td>
         </tr>
         <tr>
             <td><div class="counterTitle">D&iacute;as</div></td>
@@ -28,4 +28,7 @@
             <td><div class="counterTitle">Segundos</div></td>
         </tr>
     </table>
+    <div class="timeOverMsg">
+        <p>{{ message }}</p>
+    </div>
 </div>

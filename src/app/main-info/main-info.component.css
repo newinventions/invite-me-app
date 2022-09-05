@@ -49,6 +49,14 @@
     table-layout: fixed;
     width: 270px;
 }
+.timeOverMsg {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Amatic SC, serif;
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    color: white;
+}
 @media all and (max-width: 519px) and (min-width: 414px) {
     .bckgrndImg {
         height: 1200px;
@@ -99,6 +107,14 @@
         padding-right: 20px;
         table-layout: fixed;
         width: 400px;
+    }
+    .timeOverMsg {
+        margin-top: 22px;
+        text-align: center;
+        font-family: Amatic SC, serif;
+        font-size: 22px;
+        letter-spacing: 0.3em;
+        color: white;
     }
 }
 @media all and (max-width: 699px) and (min-width: 520px) {
@@ -152,6 +168,14 @@
         table-layout: fixed;
         width: 410px;
     }
+    .timeOverMsg {
+        margin-top: 32px;
+        text-align: center;
+        font-family: Amatic SC, serif;
+        font-size: 32px;
+        letter-spacing: 0.3em;
+        color: white;
+    }
 }
 @media all and (max-width: 1000px) and (min-width: 700px) {
     .bckgrndImg {
@@ -204,6 +228,14 @@
         table-layout: fixed;
         width: 600px;
     }
+    .timeOverMsg {
+        margin-top: 36px;
+        text-align: center;
+        font-family: Amatic SC, serif;
+        font-size: 36px;
+        letter-spacing: 0.3em;
+        color: white;
+    }
 }
 @media all and (min-width: 1001px) {
     .bckgrndImg {
@@ -255,5 +287,13 @@
         padding-right: 50px;
         table-layout: fixed;
         width: 800px;
+    }
+    .timeOverMsg {
+        margin-top: 45px;
+        text-align: center;
+        font-family: Amatic SC, serif;
+        font-size: 45px;
+        letter-spacing: 0.3em;
+        color: white;
     }
 }
