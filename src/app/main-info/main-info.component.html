@@ -8,7 +8,7 @@
     <div class="eventName">
         <p>¡Mis&nbsp;&nbsp; 3&nbsp;&nbsp; a&ntilde;os!</p>
     </div>
-    <table class="timeCounter">
+    <table class="timeCounter" *ngIf="this.timer.time.days > -2">
         <tr>
             <td><div class="counter">{{ timer.time.days }}</div></td>
             <td><div class="colon">:</div></td>

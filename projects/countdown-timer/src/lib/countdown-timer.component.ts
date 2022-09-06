@@ -5,13 +5,6 @@ import { map } from 'rxjs/internal/operators/map';
 @Component({
   selector: 'ctimer-countdown-timer',
   template: `
-    <td><div class="counter">{{ time.days }}</div></td>
-    <td><div class="colon">:</div></td>
-    <td><div class="counter">{{ time.hours }}</div></td>
-    <td><div class="colon">:</div></td>
-    <td><div class="counter">{{ time.minutes }}</div></td>
-    <td><div class="colon">:</div></td>
-    <td><div class="counter">{{ time.seconds }}</div></td>
   `,
   styles: [
   ]

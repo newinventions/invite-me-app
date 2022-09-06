@@ -54,7 +54,6 @@
     text-align: center;
     font-family: Amatic SC, serif;
     font-size: 20px;
-    letter-spacing: 0.3em;
     color: white;
 }
 @media all and (max-width: 519px) and (min-width: 414px) {
@@ -113,8 +112,8 @@
         text-align: center;
         font-family: Amatic SC, serif;
         font-size: 22px;
-        letter-spacing: 0.3em;
         color: white;
+        line-height: 22px;
     }
 }
 @media all and (max-width: 699px) and (min-width: 520px) {
@@ -173,8 +172,8 @@
         text-align: center;
         font-family: Amatic SC, serif;
         font-size: 32px;
-        letter-spacing: 0.3em;
         color: white;
+        line-height: 30px;
     }
 }
 @media all and (max-width: 1000px) and (min-width: 700px) {
@@ -233,8 +232,8 @@
         text-align: center;
         font-family: Amatic SC, serif;
         font-size: 36px;
-        letter-spacing: 0.3em;
         color: white;
+        line-height: 35px;
     }
 }
 @media all and (min-width: 1001px) {
@@ -293,7 +292,7 @@
         text-align: center;
         font-family: Amatic SC, serif;
         font-size: 45px;
-        letter-spacing: 0.3em;
         color: white;
+        line-height: 45px;
     }
 }

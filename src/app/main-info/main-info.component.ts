@@ -21,7 +21,7 @@ export class MainInfoComponent implements OnInit {
 
     //this.start().subscribe(_ => console.log("tik"))
     let counterTimer$ = this.timer.start().subscribe((_) => {
-      if (this.timer.time.days < 0) {
+      if ((this.timer.time.days == -1) && (this.timer.time.hours >= 12)) {
         this.timer.time = {
           days: 0,
           hours: 0,
@@ -29,6 +29,22 @@ export class MainInfoComponent implements OnInit {
           seconds: 0
         }
         this.message = "¡Disfruta la fiesta junto a nosotros!";
+      } else if ((this.timer.time.days == -1) && (this.timer.time.hours < 12)) {
+        this.timer.time = {
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0
+        }
+        this.message = "¡Fue una gran fiesta! Descansemos un poco.";
+      } else if (this.timer.time.days < -1) {
+        this.timer.time = {
+          days: -2,
+          hours: 0,
+          minutes: 0,
+          seconds: 0
+        }
+        this.message = "¡Gracias por acompañarnos! Deseamos que hayas disfrutado estos momentos con nosotros.";
         counterTimer$.unsubscribe();
       }
     });
