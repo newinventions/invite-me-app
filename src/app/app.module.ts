@@ -9,6 +9,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MainInfoComponent } from './main-info/main-info.component';
+import { CountdownTimerComponent, CountdownTimerModule } from 'projects/countdown-timer/src/public-api';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,12 @@ import { MainInfoComponent } from './main-info/main-info.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    CountdownTimerModule
   ],
-  providers: [],
+  providers: [
+    CountdownTimerComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
