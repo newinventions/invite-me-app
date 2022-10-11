@@ -10,13 +10,15 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MainInfoComponent } from './main-info/main-info.component';
 import { CountdownTimerComponent, CountdownTimerModule } from 'projects/countdown-timer/src/public-api';
+import { WhereWhenInfoComponent } from './where-when-info/where-when-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeDialogComponent,
     WelcomeInfoComponent,
-    MainInfoComponent
+    MainInfoComponent,
+    WhereWhenInfoComponent
   ],
   imports: [
     BrowserModule,
