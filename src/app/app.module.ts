@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MainInfoComponent } from './main-info/main-info.component';
 import { CountdownTimerComponent, CountdownTimerModule } from 'projects/countdown-timer/src/public-api';
 import { WhereWhenInfoComponent } from './where-when-info/where-when-info.component';
+import { MassMapComponent } from './mass-map/mass-map.component';
+import { HostMapComponent } from './host-map/host-map.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { WhereWhenInfoComponent } from './where-when-info/where-when-info.compon
     WelcomeDialogComponent,
     WelcomeInfoComponent,
     MainInfoComponent,
-    WhereWhenInfoComponent
+    WhereWhenInfoComponent,
+    MassMapComponent,
+    HostMapComponent
   ],
   imports: [
     BrowserModule,
