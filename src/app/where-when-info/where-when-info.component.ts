@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { CalendarOptions, GoogleCalendar, ICalendar, OutlookCalendar, YahooCalendar } from 'datebook';
 import { HostMapComponent } from '../host-map/host-map.component';
 import { MassMapComponent } from '../mass-map/mass-map.component';
 
 @Component({
   selector: 'app-where-when-info',
   templateUrl: './where-when-info.component.html',
-  styleUrls: ['./where-when-info.component.css']
+  styleUrls: ['./where-when-info.component.css'],
+  host: {
+    '(document:click)': 'onMouseClick($event)'
+  }
 })
 export class WhereWhenInfoComponent implements OnInit {
   churchTitle:string = "Ceremonia Religiosa";
@@ -21,6 +25,20 @@ export class WhereWhenInfoComponent implements OnInit {
   where:string = "Dirección:";
   mapButton:string = "Ver mapa";
   calButton:string = "Agendar en el calendario";
+  massConfig: CalendarOptions = {
+    title: 'Yeshua: ' + this.churchTitle,
+    description: 'Misa de acción de gracias de 3 años de Yeshua.',
+    location: this.churchName + ', ' + this.churchWhere,
+    start: new Date('2023-04-01T10:00:00'),
+    end: new Date('2023-04-01T11:00:00'),
+  };
+  hostConfig: CalendarOptions = {
+    title: 'Yeshua: ' + this.hostTitle,
+    description: 'Fiesta de 3 años de Yeshua.',
+    location: this.hostingName + ', ' + this.hostWhere,
+    start: new Date('2023-04-01T12:00:00'),
+    end: new Date('2023-04-01T18:00:00'),
+  };
 
   constructor(public massDialog: MatDialog, public hostDialog: MatDialog) { }
   ngOnInit(): void {
@@ -44,5 +62,73 @@ export class WhereWhenInfoComponent implements OnInit {
     dialog.afterClosed().subscribe( res => {
       console.log(`Dialog result: ${ res }`)
     })
+  }
+
+  onMouseClick(ev: MouseEvent) {
+    if (ev.target != null) {
+      var content = (ev.target as HTMLElement).textContent;
+      if (content?.trim() != this.calButton) {
+        console.log("calButton=" + this.calButton);
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  }
+
+  getMassICSFile() {
+    const icalendar = new ICalendar(this.massConfig);
+    icalendar.download();
+  }
+
+  getMassGoogleLink():string {
+    const googleCal = new GoogleCalendar(this.massConfig);
+    return googleCal.render();
+  }
+
+  getMassOutlookLink():string {
+    const outlookCal = new OutlookCalendar(this.massConfig);
+    return outlookCal.render();
+  }
+
+  getMassYahooLink():string {
+    const yahooCal = new YahooCalendar(this.massConfig);
+    yahooCal.setParam('in_st', 'Blvd. Mártires del 2 de Octubre #4313, Col. San Baltazar Campeche')
+    .setParam('in_csz', 'Puebla, Puebla, 72550');
+    return yahooCal.render();
+  }
+
+  showMassMenu() {
+    document.getElementById("massDropdown")?.classList.toggle("show");
+  }
+
+  getHostingICSFile() {
+    const icalendar = new ICalendar(this.hostConfig);
+    icalendar.download();
+  }
+
+  getHostingGoogleLink():string {
+    const googleCal = new GoogleCalendar(this.hostConfig);
+    return googleCal.render();
+  }
+
+  getHostingOutlookLink():string {
+    const outlookCal = new OutlookCalendar(this.hostConfig);
+    return outlookCal.render();
+  }
+
+  getHostingYahooLink():string {
+    const yahooCal = new YahooCalendar(this.hostConfig);
+    yahooCal.setParam('in_st', 'Blvd. Los Pilares #2212, Col. Los Pilares')
+    .setParam('in_csz', 'Puebla, Puebla, 72560');
+    return yahooCal.render();
+  }
+
+  showHostingMenu() {
+    document.getElementById("hostingDropdown")?.classList.toggle("show");
   }
 }
