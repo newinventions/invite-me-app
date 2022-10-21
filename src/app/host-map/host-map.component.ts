@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
+import keyG from '../../assets/key.json';
 
 @Component({
   selector: 'app-host-map',
@@ -27,8 +28,9 @@ export class HostMapComponent implements OnInit {
   initHostingMap(): void {
     // load the map
     let loader = new Loader({
-      apiKey: 'AIzaSyDRihSvKYDRvwmM-10dxby74ULY6prodgw'
+      apiKey: keyG.inviteme_app_g_api_key
     });
+    console.log(keyG.inviteme_app_g_api_key);
     // The location of Monasterio
     const salonGeli = { lat: 19.0171806, lng: -98.1945242 };
     loader.load().then(() => {
