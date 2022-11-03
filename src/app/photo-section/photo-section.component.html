@@ -1,0 +1,14 @@
+<div class="psHeader">
+    <div class="psImgLeft"></div>
+    <div class="psText"><p class="psTitle">Mis fotos</p></div>
+    <div class="psImgRight"></div>
+</div>
+<div class="psCarousel">
+    <owl-carousel-o [options]="owlOptions" (translated)="getPassedData($event)">
+        <ng-container *ngFor="let slide of slideStore">
+            <ng-template carouselSlide [id]="slide.id">
+                <img [src]="slide.img">
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
+</div>
