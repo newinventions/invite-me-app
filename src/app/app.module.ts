@@ -13,6 +13,9 @@ import { CountdownTimerComponent, CountdownTimerModule } from 'projects/countdow
 import { WhereWhenInfoComponent } from './where-when-info/where-when-info.component';
 import { MassMapComponent } from './mass-map/mass-map.component';
 import { HostMapComponent } from './host-map/host-map.component';
+import { RouterModule } from '@angular/router';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { PhotoSectionComponent } from './photo-section/photo-section.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { HostMapComponent } from './host-map/host-map.component';
     MainInfoComponent,
     WhereWhenInfoComponent,
     MassMapComponent,
-    HostMapComponent
+    HostMapComponent,
+    PhotoSectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import { HostMapComponent } from './host-map/host-map.component';
     MatDialogModule,
     MatMenuModule,
     MatIconModule,
-    CountdownTimerModule
+    CountdownTimerModule,
+    RouterModule,
+    CarouselModule,
   ],
   providers: [
     CountdownTimerComponent
