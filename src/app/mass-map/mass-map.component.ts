@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
+import keyG from '../../assets/key.json';
 
 @Component({
   selector: 'app-mass-map',
@@ -27,7 +28,7 @@ export class MassMapComponent implements OnInit {
   initMassMap(): void {
     // load the map
     let loader = new Loader({
-      apiKey: 'AIzaSyDRihSvKYDRvwmM-10dxby74ULY6prodgw'
+      apiKey: keyG.inviteme_app_g_api_key
     });
     // The location of Monasterio
     const monasterio = { lat: 19.0219964, lng: -98.2001673 };
