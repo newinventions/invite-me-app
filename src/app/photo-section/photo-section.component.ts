@@ -8,7 +8,7 @@ import { OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
 })
 export class PhotoSectionComponent implements OnInit {
 
-  slideStore: any[] = new Array(2).fill({id: "-1", src: '', title: '', subtitle: ''});
+  slideStore: any[] = new Array(9).fill({id: "-1", src: '', title: '', subtitle: ''});
 
   owlOptions: OwlOptions = {
     loop: true,
@@ -40,7 +40,14 @@ export class PhotoSectionComponent implements OnInit {
   ngOnInit(): void {
     this.slideStore = [
       { id: "1", img: '../../assets/photo-section/20210901_152325_ret.jpg', },
-      { id: "2", img: '../../assets/photo-section/07_20200925_145318_ret.jpg', }
+      { id: "2", img: '../../assets/photo-section/07_20200925_145318_ret.jpg', },
+      { id: "3", img: '../../assets/photo-section/20201115_140729_ret.jpg', },
+      { id: "4", img: '../../assets/photo-section/20201129_110522_ret.jpg', },
+      { id: "5", img: '../../assets/photo-section/20201230_201724_ret.jpg', },
+      { id: "6", img: '../../assets/photo-section/20211129_145930_ret.jpg', },
+      { id: "7", img: '../../assets/photo-section/20211226_154827_ret.jpg', },
+      { id: "8", img: '../../assets/photo-section/20220421_155752_ret.jpg', }, 
+      { id: "9", img: '../../assets/photo-section/20220727_154944_ret.jpg', },
     ];
   }
 
