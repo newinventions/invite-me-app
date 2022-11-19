@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FamilyInfoComponent implements OnInit {
 
   myFamilyTitle = "¡Mi Familia!";
-  momFirstName = "Blanca";
+  momFirstName = "Blanca Ruth";
   momField = "Mi mamá";
-  dadFirstName = "Jacobo";
+  dadFirstName = "Raymundo Jacobo";
   dadField = "Mi papá";
   petsName = "Toby & Daisy";
   petsField = "Mis mascotas";
