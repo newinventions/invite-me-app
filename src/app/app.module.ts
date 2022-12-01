@@ -16,6 +16,7 @@ import { HostMapComponent } from './host-map/host-map.component';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PhotoSectionComponent } from './photo-section/photo-section.component';
+import { FamilyInfoComponent } from './family-info/family-info.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PhotoSectionComponent } from './photo-section/photo-section.component';
     MassMapComponent,
     HostMapComponent,
     PhotoSectionComponent,
+    FamilyInfoComponent,
   ],
   imports: [
     BrowserModule,
