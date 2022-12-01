@@ -17,6 +17,7 @@ import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PhotoSectionComponent } from './photo-section/photo-section.component';
 import { FamilyInfoComponent } from './family-info/family-info.component';
+import { VideoSectionComponent } from './video-section/video-section.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FamilyInfoComponent } from './family-info/family-info.component';
     HostMapComponent,
     PhotoSectionComponent,
     FamilyInfoComponent,
+    VideoSectionComponent,
   ],
   imports: [
     BrowserModule,
