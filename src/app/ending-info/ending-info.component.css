@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Rubik+Distressed|Fredericka+the+Great');
+.ei-bckgroundImg {
+    height: 1000px;
+    background-image: url("../../assets/ending-info/10EndingInfoPhoto.jpg");
+    background-size: 100%;
+    background-size: cover;
+    background-position-x: center;
+}
+.ei-text {
+    text-align: center;
+    color: white;
+    padding-top: 890px;
+}
+.ei-babyName {
+    font-family: Amatic SC, serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.ei-message {
+    font-family: Fredericka the Great, serif;
+    font-size: 24px;
+    line-height: 25px;
+}
+.ei-graySection {
+    height: 135px;
+    background-color: #555;
+}
+@media all and (max-width: 519px) and (min-width: 414px) {
+    .ei-bckgroundImg {
+        height: 1200px;
+    }
+    .ei-text {
+        padding-top: 1080px;
+    }
+    .ei-babyName {
+        font-size: 22px;
+        letter-spacing: 4px;
+        margin-bottom: 15px;
+    }
+    .ei-message {
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+@media all and (max-width: 699px) and (min-width: 520px) {
+    .ei-bckgroundImg {
+        height: 1400px;
+    }
+    .ei-text {
+        padding-top: 1250px;
+    }
+    .ei-babyName {
+        font-size: 28px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+    .ei-message {
+        font-size: 40px;
+        line-height: 42px;
+    }
+}
+@media all and (max-width: 1000px) and (min-width: 700px) {
+    .ei-bckgroundImg {
+        height: 1600px;
+    }
+    .ei-text {
+        padding-top: 1400px;
+    }
+    .ei-babyName {
+        font-size: 34px;
+        letter-spacing: 6px;
+        margin-bottom: 25px;
+    }
+    .ei-message {
+        font-size: 58px;
+        line-height: 58px;
+    }
+}
+@media all and (max-width: 1652px) and (min-width: 1001px) {
+    .ei-bckgroundImg {
+        height: 1800px;
+        background-size: contain;
+    }
+    .ei-text {
+        padding-top: 1570px;
+    }
+    .ei-babyName {
+        font-size: 40px;
+        letter-spacing: 7px;
+        margin-bottom: 25px;
+    }
+    .ei-message {
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
+@media all and (min-width: 1653px) {
+    .ei-bckgroundImg {
+        height: 1800px;
+        background-size: contain;
+    }
+    .ei-text {
+        padding-top: 1650px;
+    }
+    .ei-babyName {
+        font-size: 40px;
+        letter-spacing: 7px;
+        margin-bottom: 25px;
+    }
+    .ei-message {
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
