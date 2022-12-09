@@ -18,6 +18,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PhotoSectionComponent } from './photo-section/photo-section.component';
 import { FamilyInfoComponent } from './family-info/family-info.component';
 import { VideoSectionComponent } from './video-section/video-section.component';
+import { EndingInfoComponent } from './ending-info/ending-info.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { VideoSectionComponent } from './video-section/video-section.component';
     PhotoSectionComponent,
     FamilyInfoComponent,
     VideoSectionComponent,
+    EndingInfoComponent,
   ],
   imports: [
     BrowserModule,
