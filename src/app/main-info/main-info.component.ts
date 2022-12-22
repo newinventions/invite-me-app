@@ -7,6 +7,12 @@ import { CountdownTimerComponent } from 'projects/countdown-timer/src/lib/countd
   styleUrls: ['./main-info.component.css']
 })
 export class MainInfoComponent implements OnInit {
+  miHostName = "YESHUA"
+  miEventName = "¡Mis 3 años!";
+  miDays = "Días";
+  miHours = "Horas";
+  miMinutes = "Minutos";
+  miSeconds = "Segundos";
   message: string = "";
 
   constructor(public timer: CountdownTimerComponent) { }

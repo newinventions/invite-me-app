@@ -8,6 +8,8 @@ import { OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
 })
 export class PhotoSectionComponent implements OnInit {
 
+  psTitle:string = "Mis fotos";
+
   slideStore: any[] = new Array(9).fill({id: "-1", src: '', title: '', subtitle: ''});
 
   owlOptions: OwlOptions = {
