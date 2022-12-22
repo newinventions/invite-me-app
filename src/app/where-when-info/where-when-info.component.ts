@@ -67,8 +67,18 @@ export class WhereWhenInfoComponent implements OnInit {
   onMouseClick(ev: MouseEvent) {
     if (ev.target != null) {
       var content = (ev.target as HTMLElement).textContent;
-      if (content?.trim() != this.calButton) {
-        console.log("calButton=" + this.calButton);
+      if (content?.trim() == 'Dónde & Cuándo') {
+        (document.getElementById('whereWhenInfo') as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      } else if (content?.trim() == 'Mis Fotos') {
+        (document.getElementById('photoSection') as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      } else if (content?.trim() == 'Mi Familia') {
+        (document.getElementById('familyInfo') as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      } else if (content?.trim() == 'Ver Video') {
+        (document.getElementById('videoSection') as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      } else if (content?.trim() == 'Mensaje') {
+        (document.getElementById('endingInfo') as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      } else if (content?.trim() != this.calButton) {
+        console.log("calButton=" + content);
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
           var openDropdown = dropdowns[i];
