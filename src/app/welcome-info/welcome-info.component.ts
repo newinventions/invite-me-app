@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeInfoComponent implements OnInit {
 
+  wiSalutation:string = "Bienvenido a la invitación de Yeshua";
+  wiEnterButton:string = "INGRESAR";
+
   constructor() { }
 
   ngOnInit(): void {
