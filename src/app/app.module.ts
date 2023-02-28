@@ -19,6 +19,7 @@ import { PhotoSectionComponent } from './photo-section/photo-section.component';
 import { FamilyInfoComponent } from './family-info/family-info.component';
 import { VideoSectionComponent } from './video-section/video-section.component';
 import { EndingInfoComponent } from './ending-info/ending-info.component';
+import { AudioBackgroundComponent } from './audio-background/audio-background.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { EndingInfoComponent } from './ending-info/ending-info.component';
     FamilyInfoComponent,
     VideoSectionComponent,
     EndingInfoComponent,
+    AudioBackgroundComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { EndingInfoComponent } from './ending-info/ending-info.component';
     CarouselModule,
   ],
   providers: [
-    CountdownTimerComponent
+    CountdownTimerComponent,
+    AudioBackgroundComponent
   ],
   bootstrap: [AppComponent]
 })
