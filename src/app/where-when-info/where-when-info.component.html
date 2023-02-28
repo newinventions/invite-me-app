@@ -1,6 +1,6 @@
 <div class="wwiHeader">
     <div class="wwiImgLeft"></div>
-    <div class="wwiText"><p class="wwiTitle">D&oacute;nde & Cu&aacute;ndo</p></div>
+    <div class="wwiText"><p class="wwiTitle">{{ wwInfoTitle }}</p></div>
     <div class="wwiImgRight"></div>
 </div>
 <div class="wwInfo">
@@ -37,10 +37,10 @@
             </button>
         </span>
         <div id="massDropdown" class="dropdown-content">
-            <a role="button" (click)="getMassICSFile()">Outlook</a>
-            <a href="{{ getMassGoogleLink() }}" target="_blank">Google <span class="online">(online)</span></a>
-            <a href="{{ getMassOutlookLink() }}" target="_blank">Outlook <span class="online">(online)</span></a>
-            <a href="{{ getMassYahooLink() }}" target="_blank">Yahoo <span class="online">(online)</span></a>
+            <a role="button" (click)="getMassICSFile()">{{ op1 }}</a>
+            <a href="{{ getMassGoogleLink() }}" target="_blank">{{ op2 }} <span class="online">{{ online }}</span></a>
+            <a href="{{ getMassOutlookLink() }}" target="_blank">{{ op1 }} <span class="online">{{ online }}</span></a>
+            <a href="{{ getMassYahooLink() }}" target="_blank">{{ op3 }} <span class="online">{{ online }}</span></a>
         </div>
     </div>
     <div class="info">
@@ -76,10 +76,10 @@
             </button>
         </span>
         <div id="hostingDropdown" class="dropdown-content">
-            <a role="button" (click)="getHostingICSFile()">Outlook</a>
-            <a href="{{ getHostingGoogleLink() }}" target="_blank">Google <span class="online">(online)</span></a>
-            <a href="{{ getHostingOutlookLink() }}" target="_blank">Outlook <span class="online">(online)</span></a>
-            <a href="{{ getHostingYahooLink() }}" target="_blank">Yahoo <span class="online">(online)</span></a>
+            <a role="button" (click)="getHostingICSFile()">{{ op1 }}</a>
+            <a href="{{ getHostingGoogleLink() }}" target="_blank">{{ op2 }} <span class="online">{{ online }}</span></a>
+            <a href="{{ getHostingOutlookLink() }}" target="_blank">{{ op1 }} <span class="online">{{ online }}</span></a>
+            <a href="{{ getHostingYahooLink() }}" target="_blank">{{ op3 }} <span class="online">{{ online }}</span></a>
         </div>
     </div>
 </div>

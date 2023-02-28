@@ -13,6 +13,7 @@ import { MassMapComponent } from '../mass-map/mass-map.component';
   }
 })
 export class WhereWhenInfoComponent implements OnInit {
+  wwInfoTitle:string = "Dónde & Cuándo"
   churchTitle:string = "Ceremonia Religiosa";
   churchName:string = "Monasterio de la Purísima Concepción";
   churchWhen:string = "1º de Abril de 2023, 10 a.m.";
@@ -39,6 +40,10 @@ export class WhereWhenInfoComponent implements OnInit {
     start: new Date('2023-04-01T12:00:00'),
     end: new Date('2023-04-01T18:00:00'),
   };
+  op1:string = "Outlook";
+  op2:string = "Google";
+  op3:string = "Yahoo";
+  online:string = "(online)";
 
   constructor(public massDialog: MatDialog, public hostDialog: MatDialog) { }
   ngOnInit(): void {
