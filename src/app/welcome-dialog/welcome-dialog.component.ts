@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog'
+import { AudioBackgroundComponent } from '../audio-background/audio-background.component';
 import { WelcomeInfoComponent } from '../welcome-info/welcome-info.component';
 
 @Component({
@@ -9,7 +10,11 @@ import { WelcomeInfoComponent } from '../welcome-info/welcome-info.component';
 })
 export class WelcomeDialogComponent implements OnInit {
 
-  constructor(public welcomeDialog: MatDialog) { }
+  showOn:boolean = true;
+  showOff:boolean = false;
+
+  constructor(public welcomeDialog: MatDialog,
+    public audio: AudioBackgroundComponent) { }
 
   ngOnInit(): void {
     this.openDialog();
@@ -18,11 +23,26 @@ export class WelcomeDialogComponent implements OnInit {
   openDialog() {
     const dialog = this.welcomeDialog.open(WelcomeInfoComponent, {
       height: 'auto',
-      width: 'auto'
+      width: 'auto',
+      disableClose: true,
+      autoFocus: true
     });
+    //this.audio = new AudioBackgroundComponent();
     dialog.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${ result }`)
+      console.log(`Dialog result: ${ result }`);
+      this.audio.playAudio();
     })
   }
 
+  wMusicOn() {
+    this.showOn = true;
+    this.showOff = false;
+    this.audio.turnMusicOn();
+  }
+
+  wMusicOff() {
+    this.showOff = true;
+    this.showOn = false;
+    this.audio.turnMusicOff();
+  }
 }
