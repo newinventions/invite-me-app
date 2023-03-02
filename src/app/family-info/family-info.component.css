@@ -59,6 +59,31 @@
     border: 6px solid #fff;
     box-shadow: 2px 4px 7px #ddd;
 }
+@media all and (max-width: 413px) and (min-width: 270px) {
+    .fiHeader {
+        padding-top: 1px;
+        margin-top: 0px;
+        margin-bottom: 85px;
+    }
+    .fiText {
+        position: absolute;
+        width: 100%;
+    }
+    .fiTitle {
+        padding: 30px 0px 0px 0px;
+    }
+    .fiImgLeft {
+        float: left;
+        content: url('../../assets/family-info/08FamilyInfoLeft_Small.png');
+        padding: 13px 0px 0px 5px;
+    }
+    .fiImgRight {
+        float: right;
+        content: url('../../assets/family-info/08FamilyInfoRight_Small.png');
+        margin-right: 5px;
+        padding: 35px 0px 0px 0px;
+    }
+}
 @media all and (max-width: 519px) and (min-width: 414px) {
     .fiHeader {
         padding-top: 1px;
