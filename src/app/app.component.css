@@ -26,6 +26,17 @@
 .mainInfo {
     padding: 1px 0px 0px 0px;
 }
+@media all and (max-width: 399px) and (min-width: 270px) {
+    .imgLeft {
+        float:left;
+        content: url('../assets/header/02headerLeft_300_400.png');
+    }
+    .imgRight {
+        float:left;
+        content: url('../assets/header/02headerRight_300_400.png');
+        padding: 0px 38px 0px 0px;
+    }
+}
 @media all and (max-width: 499px) and (min-width: 400px) {
     .imgLeft {
         float:left;
