@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Rubik+Distressed|Fredericka+the+Great');
 
 .bckgrndImg {
-    height: 1000px;
-    background-image: url("../../assets/Foto_20220401002.jpg");
+    height: 590px;
+    background-image: url("../../assets/frontLow.jpg");
     background-size: 100%;
     background-size: cover;
     background-position-x: center;
 }
 .pName {
-    margin-top: 700px;
+    margin-top: 400px;
     text-align: center;
     font-family: Amatic SC, serif;
     font-size: 22px;
@@ -58,10 +58,10 @@
 }
 @media all and (max-width: 519px) and (min-width: 414px) {
     .bckgrndImg {
-        height: 1200px;
+        height: 680px;
     }
     .pName {
-        margin-top: 900px;
+        margin-top: 425px;
         letter-spacing: 0.3em;
         font-size: 25px;
     }
@@ -95,10 +95,10 @@
 }
 @media all and (max-width: 699px) and (min-width: 520px) {
     .bckgrndImg {
-        height: 1400px;
+        height: 725px;
     }
     .pName {
-        margin-top: 1050px;
+        margin-top: 450px;
         letter-spacing: 0.3em;
         font-size: 35px;
     }
@@ -132,10 +132,10 @@
 }
 @media all and (max-width: 1000px) and (min-width: 700px) {
     .bckgrndImg {
-        height: 1600px;
+        height: 850px;
     }
     .pName {
-        margin-top: 1200px;
+        margin-top: 500px;
         letter-spacing: 0.3em;
         font-size: 40px;
     }
@@ -169,11 +169,12 @@
 }
 @media all and (min-width: 1001px) {
     .bckgrndImg {
-        height: 1800px;
-        background-size: contain;
+        height: 950px;
+        background-size: 1300px;
+        background-position: center 1750px;
     }
     .pName {
-        margin-top: 1400px;
+        margin-top: 550px;
         letter-spacing: 0.3em;
         font-size: 50px;
     }

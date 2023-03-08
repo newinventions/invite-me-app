@@ -27,7 +27,6 @@ export class WelcomeDialogComponent implements OnInit {
       disableClose: true,
       autoFocus: true
     });
-    //this.audio = new AudioBackgroundComponent();
     dialog.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${ result }`);
       this.audio.playAudio();
