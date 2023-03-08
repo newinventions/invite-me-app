@@ -9,13 +9,13 @@ import keyG from '../../assets/key.json';
 })
 export class MassMapComponent implements OnInit {
   title:string = "Ceremonia Religiosa";
-  church:string = "Monasterio de la Purísima Concepción";
+  church:string = "Parroquia 'María Reina de la Paz'";
   when:string = "Cuándo:";
-  whenData:string = "1º de Abril de 2023, 10 a.m.";
+  whenData:string = "1º de Abril de 2023, 11 a.m.";
   where:string = "Dirección:";
-  whereData:string = "Blvd. Mártires del 2 de Octubre #4313, Col. San Baltazar Campeche, C.P. 72550, Puebla, Pue.";
+  whereData:string = "5 B Sur y 59 Poniente S/N, Col. Villa Encantada, C.P. 72330, Puebla, Pue.";
   closeButton:string = "CERRAR";
-  link:string = "<a href=\"https://www.google.com/maps/place/Monasterio+De+La+Purisima+Concepci%C3%B3n+A.+R./@19.0219797,-98.2024491,17z/data=!3m1!4b1!4m5!3m4!1s0x85cfc0bd928e055d:0xef3d4b83c25412ea!8m2!3d19.0219964!4d-98.2001673\" target=\"_blank\" style=\"font-size:10px;\" >Abrir en Google Maps</a>"
+  link:string = "<a href=\"https://www.google.com.mx/maps/place/Parroquia+%22Mar%C3%ADa+Reina+de+la+paz%22/@19.0182008,-98.2284936,15z/data=!4m14!1m7!3m6!1s0x85cfc0b293e893c5:0x41fef9eaa345216b!2sParroquia+%22Mar%C3%ADa+Reina+de+la+paz%22!8m2!3d19.0182008!4d-98.2197389!16s%2Fg%2F1ptylvz1q!3m5!1s0x85cfc0b293e893c5:0x41fef9eaa345216b!8m2!3d19.0182008!4d-98.2197389!16s%2Fg%2F1ptylvz1q\" target=\"_blank\" style=\"font-size:10px;\" >Abrir en Google Maps</a>"
   private map!: google.maps.Map;
 
   constructor() { }
@@ -31,7 +31,7 @@ export class MassMapComponent implements OnInit {
       apiKey: keyG.inviteme_app_g_api_key
     });
     // The location of Monasterio
-    const monasterio = { lat: 19.0219964, lng: -98.2001673 };
+    const monasterio = { lat: 19.0179712, lng: -98.2197946 };
     loader.load().then(() => {
       console.log('mass map loaded');
       // The map, centered at Monasterio

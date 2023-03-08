@@ -11,7 +11,7 @@ export class HostMapComponent implements OnInit {
   title:string = "Recepción";
   hosting:string = "Salón 'Geli', Eventos Sociales";
   when:string = "Cuándo:";
-  whenData:string = "1º de Abril de 2023, 12 p.m.";
+  whenData:string = "1º de Abril de 2023, 1:30 p.m.";
   where:string = "Dirección:";
   whereData:string = "Blvd. Los Pilares #2212, Col. Los Pilares, C.P. 72560, Puebla, Pue.";
   closeButton:string = "CERRAR";

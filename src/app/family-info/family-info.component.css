@@ -27,7 +27,7 @@
     padding-bottom: 25px;
 }
 .dadPhoto {
-    content: url('../../assets/family-info/08FamilyDad.jpg');
+    content: url('../../assets/family-info/dadFace.jpg');
     width: 200px;
     height: 200px;
     display: block;
@@ -38,7 +38,7 @@
     box-shadow: 2px 4px 7px #ddd;
 }
 .momPhoto {
-    content: url('../../assets/family-info/08FamilyMom.jpg');
+    content: url('../../assets/family-info/momFace.jpg');
     width: 200px;
     height: 200px;
     display: block;
@@ -49,7 +49,7 @@
     box-shadow: 2px 4px 7px #ddd;
 }
 .petsPhoto {
-    content: url('../../assets/family-info/08FamilyPets.jpg');
+    content: url('../../assets/family-info/petFaces.jpg');
     width: 200px;
     height: 200px;
     display: block;
@@ -123,37 +123,16 @@
         padding-bottom: 30px;
     }
     .dadPhoto {
-        content: url('../../assets/family-info/08FamilyDad.jpg');
         width: 225px;
         height: 225px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .momPhoto {
-        content: url('../../assets/family-info/08FamilyMom.jpg');
         width: 225px;
         height: 225px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .petsPhoto {
-        content: url('../../assets/family-info/08FamilyPets.jpg');
         width: 225px;
         height: 225px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
 }
 @media all and (max-width: 699px) and (min-width: 520px) {
@@ -195,37 +174,16 @@
         padding-bottom: 40px;
     }
     .dadPhoto {
-        content: url('../../assets/family-info/08FamilyDad.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .momPhoto {
-        content: url('../../assets/family-info/08FamilyMom.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .petsPhoto {
-        content: url('../../assets/family-info/08FamilyPets.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
 }
 @media all and (max-width: 1114px) and (min-width: 700px) {
@@ -271,37 +229,16 @@
         padding: 20px 0px 60px 0px;
     }
     .dadPhoto {
-        content: url('../../assets/family-info/08FamilyDad.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .momPhoto {
-        content: url('../../assets/family-info/08FamilyMom.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .petsPhoto {
-        content: url('../../assets/family-info/08FamilyPets.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
 }
 @media all and (max-width: 1224px) and (min-width: 1115px) {
@@ -347,37 +284,16 @@
         padding: 50px 0px 130px 0px;
     }
     .dadPhoto {
-        content: url('../../assets/family-info/08FamilyDad.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .momPhoto {
-        content: url('../../assets/family-info/08FamilyMom.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .petsPhoto {
-        content: url('../../assets/family-info/08FamilyPets.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
 }
 @media all and (min-width: 1225px) {
@@ -423,36 +339,15 @@
         padding: 50px 0px 130px 0px;
     }
     .dadPhoto {
-        content: url('../../assets/family-info/08FamilyDad.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .momPhoto {
-        content: url('../../assets/family-info/08FamilyMom.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
     .petsPhoto {
-        content: url('../../assets/family-info/08FamilyPets.jpg');
         width: 250px;
         height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        box-shadow: 2px 4px 7px #ddd;
     }
 }
