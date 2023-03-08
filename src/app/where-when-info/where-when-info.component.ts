@@ -15,13 +15,13 @@ import { MassMapComponent } from '../mass-map/mass-map.component';
 export class WhereWhenInfoComponent implements OnInit {
   wwInfoTitle:string = "Dónde & Cuándo"
   churchTitle:string = "Ceremonia Religiosa";
-  churchName:string = "Monasterio de la Purísima Concepción";
-  churchWhen:string = "1º de Abril de 2023, 10 a.m.";
-  churchWhere:string = "Blvd. Mártires del 2 de Octubre #4313, Col. San Baltazar Campeche, C.P. 72550, Puebla, Pue.";
+  churchName:string = "Parroquia 'María Reina de la Paz'";
+  churchWhen:string = "1º de Abril de 2023, 11 a.m.";
+  churchWhere:string = "5 B Sur y 59 Poniente S/N, Col. Villa Encantada, C.P. 72330, Puebla, Pue.";
   hostTitle:string = "Recepción";
   hostingName:string = "Salón 'Geli', Eventos Sociales";
   hostWhere:string = "Blvd. Los Pilares #2212, Col. Los Pilares, C.P. 72560, Puebla, Pue.";
-  hostWhen:string = "1º de Abril de 2023, 12 p.m.";
+  hostWhen:string = "1º de Abril de 2023, 1:30 p.m.";
   when:string = "Cuándo:";
   where:string = "Dirección:";
   mapButton:string = "Ver mapa";
@@ -30,14 +30,14 @@ export class WhereWhenInfoComponent implements OnInit {
     title: 'Yeshua: ' + this.churchTitle,
     description: 'Misa de acción de gracias de 3 años de Yeshua.',
     location: this.churchName + ', ' + this.churchWhere,
-    start: new Date('2023-04-01T10:00:00'),
-    end: new Date('2023-04-01T11:00:00'),
+    start: new Date('2023-04-01T11:00:00'),
+    end: new Date('2023-04-01T12:00:00'),
   };
   hostConfig: CalendarOptions = {
     title: 'Yeshua: ' + this.hostTitle,
     description: 'Fiesta de 3 años de Yeshua.',
     location: this.hostingName + ', ' + this.hostWhere,
-    start: new Date('2023-04-01T12:00:00'),
+    start: new Date('2023-04-01T13:30:00'),
     end: new Date('2023-04-01T18:00:00'),
   };
   op1:string = "Outlook";
