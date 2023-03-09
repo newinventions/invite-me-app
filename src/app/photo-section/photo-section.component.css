@@ -14,8 +14,8 @@
     height: auto;
     width: 100%;
 }
-img {
-    height: 800px;
+.psImgCar {
+    height: 620px;
     width: auto;
 }
 @media all and (max-width: 413px) and (min-width: 270px) {
