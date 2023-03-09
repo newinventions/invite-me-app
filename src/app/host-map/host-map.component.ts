@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
-import keyG from '../../assets/key.json';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-host-map',
@@ -8,6 +8,7 @@ import keyG from '../../assets/key.json';
   styleUrls: ['./host-map.component.css']
 })
 export class HostMapComponent implements OnInit {
+  gApiKey:string = environment.g_api_key;
   title:string = "Recepción";
   hosting:string = "Salón 'Geli', Eventos Sociales";
   when:string = "Cuándo:";
@@ -28,9 +29,8 @@ export class HostMapComponent implements OnInit {
   initHostingMap(): void {
     // load the map
     let loader = new Loader({
-      apiKey: keyG.inviteme_app_g_api_key
+      apiKey: this.gApiKey
     });
-    console.log(keyG.inviteme_app_g_api_key);
     // The location of Monasterio
     const salonGeli = { lat: 19.0171806, lng: -98.1945242 };
     loader.load().then(() => {

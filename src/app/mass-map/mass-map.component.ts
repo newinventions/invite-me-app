@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
-import keyG from '../../assets/key.json';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-mass-map',
@@ -8,6 +8,7 @@ import keyG from '../../assets/key.json';
   styleUrls: ['./mass-map.component.css']
 })
 export class MassMapComponent implements OnInit {
+  gApiKey:string = environment.g_api_key;
   title:string = "Ceremonia Religiosa";
   church:string = "Parroquia 'María Reina de la Paz'";
   when:string = "Cuándo:";
@@ -28,7 +29,7 @@ export class MassMapComponent implements OnInit {
   initMassMap(): void {
     // load the map
     let loader = new Loader({
-      apiKey: keyG.inviteme_app_g_api_key
+      apiKey: this.gApiKey
     });
     // The location of Monasterio
     const monasterio = { lat: 19.0179712, lng: -98.2197946 };
