@@ -6,8 +6,8 @@
 <div class="psCarousel">
     <owl-carousel-o [options]="owlOptions" (translated)="getPassedData($event)">
         <ng-container *ngFor="let slide of slideStore">
-            <ng-template carouselSlide [width]="550" [id]="slide.id">
-                <img [src]="slide.img">
+            <ng-template carouselSlide [width]="420" [id]="slide.id">
+                <img class="psImgCar" [src]="slide.img">
             </ng-template>
         </ng-container>
     </owl-carousel-o>

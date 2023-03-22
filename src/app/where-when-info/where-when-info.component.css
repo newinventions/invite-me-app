@@ -35,13 +35,14 @@
     font-size: 13px;
 }
 .massPic {
-    height: 170px;
+    height: 220px;
     width: 100%;
     margin: 0px 0px 20px 0px;
     background-image: url("../../assets/where-when/church.jpg");
     background-size: auto;
     background-size: cover;
     background-position-x: center;
+    background-position-y: bottom;
 }
 .hostingTitle {
     font-family: Happy Monkey, serif;
@@ -54,13 +55,14 @@
     font-size: 13px;
 }
 .hostingPic {
-    height: 170px;
+    height: 220px;
     width: 100%;
     background-image: url("../../assets/where-when/hosting.jpg");
     margin: 0px 0px 20px 0px;
     background-size: auto;
     background-size: cover;
     background-position-x: center;
+    background-position-y: bottom;
 }
 .bText {
     font-weight: bold;
@@ -176,11 +178,11 @@ button {
         display: inline-block;
     }
     .massPic {
-        height: 200px;
+        height: 300px;
         width: 100%;
     }
     .hostingPic {
-        height: 200px;
+        height: 300px;
         width: 100%;
     }
     .massTitle {
@@ -243,11 +245,11 @@ button {
         display: inline-block;
     }
     .massPic {
-        height: 300px;
+        height: 370px;
         width: 100%;
     }
     .hostingPic {
-        height: 300px;
+        height: 370px;
         width: 100%;
     }
     .massTitle {
@@ -310,11 +312,11 @@ button {
         display: inline-block;
     }
     .massPic {
-        height: 400px;
+        height: 500px;
         width: 100%;
     }
     .hostingPic {
-        height: 400px;
+        height: 500px;
         width: 100%;
     }
     .massTitle {

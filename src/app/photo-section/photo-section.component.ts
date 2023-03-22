@@ -27,8 +27,14 @@ export class PhotoSectionComponent implements OnInit {
       0: {
         items: 1
       },
-      940: {
-        items: 1
+      400: {
+        items: 2
+      },
+      760: {
+        items: 3
+      },
+      1000: {
+        items: 4
       }
     },
     center: true,
