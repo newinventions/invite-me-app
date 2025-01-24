@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { CalendarOptions, GoogleCalendar, ICalendar, OutlookCalendar, YahooCalendar } from 'datebook';
 import { HostMapComponent } from '../host-map/host-map.component';
 import { MassMapComponent } from '../mass-map/mass-map.component';
